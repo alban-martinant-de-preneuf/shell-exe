@@ -1,3 +1,0 @@
-#!/bin/bash
-
-curl --request POST --data "user=$1&cmd=authenticate&password=$2" 'https://alcasar.laplateforme.io/intercept.php?res=logoff&uamip=10.10.0.1&uamport=3990&challenge=30f1269b419ec253f1188defedbfcce1&called=68-05-CA-3A-2E-49&mac=EC-2E-98-EF-71-91&ip=10.10.12.241&nasid=alcasar.laplateforme.io&sessionid=1664452490000001f4&ssl=https%3a%2f%2f1.0.0.1%3a3991%2f&userurl=http%3a%2f%2fdetectportal.firefox.com%2fcanonical.html&md=59176283427027E32E8448B12F4D75AC'
