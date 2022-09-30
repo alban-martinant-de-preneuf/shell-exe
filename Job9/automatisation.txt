@@ -1,0 +1,24 @@
+Pour automatiser l'exécution du script en cas de modofication du .CSV, j'ai utiliser incron :
+
+Passer en root : 
+sudo su -
+
+installer incron :
+apt install incron
+
+Ajouter Autorisation d'utiliser incron :
+echo root | sudo tee -a /etc/incron.allow
+
+Configurer incron :
+incrontab -e
+puis ajouter la ligne :
+/home/alban/Documents/Development/shell-exe/Job9/Shell_Userlist.csv     IN_MODIFY       /home/alban/Documents/Development/shell-exe/Job9/accessrights.sh
+
+Démarrer le deamon incron :
+systemctl start incron.service
+
+Pour vérifier :
+systemctl status incron.service
+
+
+
